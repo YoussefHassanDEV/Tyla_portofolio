@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml+png" href="./public/cover.png" />
+  <link rel="stylesheet" href="./src/style.css">
+  <link rel="stylesheet" href="./src/tailwind.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <div class="overflow-hidden bg-gray-800">
+    <header class="w-full h-16 bg-gray-600 drop-shadow-lg fixed z-50">
+      <div class="container px-4 md:px-0 h-full mx-auto flex justify-between items-center">
+        <!-- Logo Here -->
+        <a class="text-yellow-400 text-xl font-bold italic" href="#">Take <span class="text-white">A tour</span></a>
+
+        <!-- Menu links here -->
+        <ul id="menu" class="hidden fixed top-0 right-0 px-10 py-16 bg-gray-800 z-50
+                md:relative md:flex md:p-0 md:bg-transparent md:flex-row md:space-x-6">
+
+          <li class="md:hidden z-90 fixed top-4 right-6">
+            <a href="javascript:void(0)" class="text-right text-white text-4xl" onclick="toggleMenu()">&times;</a>
+          </li>
+
+          <li>
+            <a id="homeID" class="text-white opacity-70 hover:opacity-100 duration-300" href="#about">Home</a>
+          </li>
+          <li>
+            <a id="EducationID" class="text-white opacity-70 hover:opacity-100 duration-300" href="#Education">Education</a>
+          </li>
+          <li>
+            <a id="CertificatesID" class="text-white opacity-70 hover:opacity-100 duration-300" href="#Certificates">Certificates</a>
+          </li>
+
+          <li>
+            <a id="skillsID" class="text-white opacity-70 hover:opacity-100 duration-300" href="#skills">skills</a>
+          </li>
+          <li>
+            <a id="projectID" class="text-white opacity-70 hover:opacity-100 duration-300" href="#project">project</a>
+          </li>
+          <li>
+            <a id="contactID" class="text-white opacity-70 hover:opacity-100 duration-300" href="#contact">contact</a>
+          </li>
+          <li>
+            <a id="footer" class="text-white opacity-70 hover:opacity-100 duration-300" href="#footer">Footer</a>
+          </li>
+
+        </ul>
+
+        <!-- This is used to open the menu on mobile devices -->
+        <div class="flex items-center md:hidden">
+          <button class="text-white text-4xl font-bold opacity-70 hover:opacity-100 duration-300"
+            onclick="toggleMenu()">
+            &#9776;
+          </button>
+        </div>
+
+    </header>
+
+    <div id="about" class="w-screen h-fit bg-gray-700 text-white pt-28 z-10">
+      <br>
+      <div class="flex justify-center">
+        <h2 class="flex font-semibold">
+          Hello <span class="animate-waving-hand ">👋🏻</span>, I am Youssef
+        </h2>
+      </div>
+
+      <div class="flex items-center justify-center  py-5">
+        <div class="w-max">
+          <h1
+            class=" font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-300 animate-typing overflow-hidden whitespace-nowrap   pr-5 text-3xl">
+            Software Engineer|
+          </h1>
+        </div>
+      </div>
+      <div class="flex items-center justify-center py-5">
+        <div class="flex ">
+          <div>
+            <h1 class=" overflow-hidden whitespace-nowrap  px-20  text-3xl text-white font-bold">
+              Frontend Developer
+            </h1>
+            <p class="px-44">Angular | React</p>
+          </div>
+          <div>
+            <h1 class=" overflow-hidden whitespace-nowrap  px-20  text-3xl text-white font-bold">
+              Backend Developer
+            </h1>
+            <p class="px-44">nodeJS | Dotnet</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div id="Education" class="w-full h-fit bg-gray-800 text-white">
+      <div class="flex items-center justify-center  py-5">
+        <div class="flex items-center justify-center  py-5">
+          <div class="w-max">
+            <h1
+              class="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-300 animate-typing overflow-hidden whitespace-nowrap   pr-5 text-3xl">
+              Graduated From Faculty of artficial intelligence |
+            </h1>
+            <h1
+              class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-300 animate-typing overflow-hidden whitespace-nowrap   pr-5 text-3xl">
+              Kafr
+              el-Sheikh University
+            </h1>
+            <h1
+              class="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-300 animate-typing overflow-hidden whitespace-nowrap   pr-5 text-3xl">
+              Victoria College
+            </h1>
+            <h1
+              class="text-3xl   font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-300 animate-typing overflow-hidden whitespace-nowrap   pr-5 text-3xl">
+              High School | Alexandria | Egypt
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="Certificates" class="w-full  h-fit bg-gray-700 text-white">
+      <div class="flex items-center justify-center  py-5">
+        <div class="w-max">
+          <h1
+            class=" font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-300  overflow-hidden whitespace-nowrap   pr-5 text-3xl">
+            Click On the Certificates To Show |
+          </h1>
+        </div>
+      </div>
+      <div class="flex items-center justify-center py-5">
+        <div class="flex ">
+          <div>
+            <h3 class=" overflow-hidden whitespace-nowrap  px-20  text-1xl text-white font-bold">
+              <a target="_blank"
+                href="https://github.com/YoussefHassanDEV/Certificates/blob/main/2022-ICPC%20Kafr%20Elsheikh%20U%20CPC-Mr.%20Youssef%20Hassan-PLACE.pdf">
+                Ecpc Finalist</a>
+            </h3>
+            <h3 class=" overflow-hidden whitespace-nowrap  px-20  text-1xl text-white font-bold">
+              <a target="_blank"
+                href="https://github.com/YoussefHassanDEV/Certificates/blob/main/C%2B%2B_Programming_step_by_step_from_beginner_to_ultimate_level.pdf">
+                C++ Programing Step By Step From Beginner to ultimate level</a>
+            </h3>
+            <h3 class=" overflow-hidden whitespace-nowrap  px-20  text-1xl text-white font-bold">
+              <a target="_blank" href="https://github.com/YoussefHassanDEV/Certificates/blob/main/Youssef%20Hassan%20Ali%20lvl%201.pdf">
+                Coach Academy level 1 (prog1)</a>
+            </h3>
+            <h3 class=" overflow-hidden whitespace-nowrap  px-20  text-1xl text-white font-bold">
+              <a target="_blank" href="https://github.com/YoussefHassanDEV/Certificates/blob/main/Youssef%20Hassan%20Ali%20lv%202.pdf">
+                Coach Academy level 2 (DSA)
+              </a>
+            </h3>
+          </div>
+          <div>
+            <h3 class=" overflow-hidden whitespace-nowrap  px-20  text-1xl text-white font-bold">
+              <a target="_blank" href="https://github.com/YoussefHassanDEV/Certificates/blob/main/_Course_Certificate_En.pdf">
+                The Princaple of writing Clean Code
+              </a>
+            </h3>
+            <h3 class=" overflow-hidden whitespace-nowrap  px-20  text-1xl text-white font-bold">
+              Head of HR icpc Community
+            </h3>
+            <h3 class=" overflow-hidden whitespace-nowrap  px-20  text-1xl text-white font-bold">
+              mentor at icpc Community
+            </h3>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="skills" class="w-full h-f bg-gray-800 text-white">
+      <div class="flex items-center justify-center  py-5">
+        <div class="w-max">
+          <h1
+            class=" font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-300  overflow-hidden whitespace-nowrap   pr-5 text-3xl">
+            For More info about skills click on the skill |
+          </h1>
+        </div>
+      </div>
+      <div class="flex items-center justify-center py-5">
+        <div class="flex ">
+          <div>
+            <h3 class=" overflow-hidden whitespace-nowrap  px-20  text-1xl text-white font-bold">
+              <a target="_blank" href="https://en.wikipedia.org/wiki/C%2B%2B">
+                C++</a>
+            </h3>
+            <h3 class=" overflow-hidden whitespace-nowrap  px-20  text-1xl text-white font-bold">
+              <a target="_blank" href="https://en.wikipedia.org/wiki/C_Sharp_%28programming_language%29">
+                C#</a>
+            </h3>
+            <h3 class=" overflow-hidden whitespace-nowrap  px-20  text-1xl text-white font-bold">
+              <a target="_blank" href="https://www.typescriptlang.org/">
+                Typescript</a>
+            </h3>
+            <h3 class=" overflow-hidden whitespace-nowrap  px-20  text-1xl text-white font-bold">
+              <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                JavaScript
+              </a>
+            </h3>
+          </div>
+          <div>
+            <h3 class=" overflow-hidden whitespace-nowrap  px-20  text-1xl text-white font-bold">
+              <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+                HTML
+              </a>
+            </h3>
+            <h3 class=" overflow-hidden whitespace-nowrap  px-20  text-1xl text-white font-bold">
+              <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+                CSS
+              </a>
+            </h3>
+            <h3 class=" overflow-hidden whitespace-nowrap  px-20  text-1xl text-white font-bold">
+              <a target="_blank" href="https://learnsql.com/blog/what-is-sql/">
+                SQL
+              </a>
+            </h3>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="project" class="w-full h-fit bg-gray-700 text-white">
+      <div class="flex items-center justify-center  py-5">
+        <div class="w-max">
+          <h1
+            class=" font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-300  overflow-hidden whitespace-nowrap   pr-5 text-3xl">
+            For More info about Project click on the Project |
+          </h1>
+        </div>
+      </div>
+      <div class="flex items-center justify-center py-5">
+        <div class="flex ">
+          <div>
+            <h3 class=" overflow-hidden whitespace-nowrap  px-20  text-1xl text-white font-bold">
+              <a target="_blank" href="https://github.com/YoussefHassanDEV/Bakery_FrontEnd">
+                Bakery Store</a>
+            </h3>
+            <h3 class=" overflow-hidden whitespace-nowrap  px-20  text-1xl text-white font-bold">
+              <a target="_blank" href="https://github.com/YoussefHassanDEV/Login_system">
+                Login_system
+              </a>
+            </h3>
+
+            <h3 class=" overflow-hidden whitespace-nowrap  px-20  text-1xl text-white font-bold">
+              <a target="_blank" href="https://github.com/YoussefHassanDEV/weatherapp">
+                weatherapp
+              </a>
+            </h3>
+            <h3 class=" overflow-hidden whitespace-nowrap  px-20  text-1xl text-white font-bold">
+              <a target="_blank" href="https://github.com/YoussefHassanDEV/E-commerce">
+                E-commerce
+              </a>
+            </h3>
+            <h3 class=" overflow-hidden whitespace-nowrap  px-20  text-1xl text-white font-bold">
+              <a target="_blank" href="https://github.com/YoussefHassanDEV/Fokir_FrontEnd-project">
+                Fokir</a>
+            </h3>
+            <h3 class=" overflow-hidden whitespace-nowrap  px-20  text-1xl text-white font-bold">
+              <a target="_blank" href="https://github.com/YoussefHassanDEV/Mealify_FrontEnd">
+                Mealify</a>
+            </h3>
+            <h3 class=" overflow-hidden whitespace-nowrap  px-20  text-1xl text-white font-bold">
+              <a target="_blank" href="https://github.com/YoussefHassanDEV/Hospital_System">
+                Hospital_System
+              </a>
+            </h3>
+          </div>
+          <div>
+            <h3 class=" overflow-hidden whitespace-nowrap  px-20  text-1xl text-white font-bold">
+              <a target="_blank" href="https://github.com/YoussefHassanDEV/Libarary_System">
+                Libarary_System
+              </a>
+            </h3>
+            <h3 class=" overflow-hidden whitespace-nowrap  px-20  text-1xl text-white font-bold">
+              <a target="_blank" href="https://github.com/YoussefHassanDEV/Ask_Me">
+                Ask_Me
+              </a>
+            </h3>
+            <h3 class=" overflow-hidden whitespace-nowrap  px-20  text-1xl text-white font-bold">
+              <a target="_blank" href="https://github.com/YoussefHassanDEV/DevFolio_FrontEnd">
+                DevFolio
+              </a>
+            </h3>
+            <h3 class=" overflow-hidden whitespace-nowrap  px-20  text-1xl text-white font-bold">
+              <a target="_blank" href="https://github.com/YoussefHassanDEV/DANIELS_Frontend_project">
+                DANIELS
+              </a>
+            </h3>
+            <h3 class=" overflow-hidden whitespace-nowrap  px-20  text-1xl text-white font-bold">
+              <a target="_blank" href="https://github.com/YoussefHassanDEV/BookMark-FrontEnd-Project">
+                BookMark
+              </a>
+            </h3>
+            <h3 class=" overflow-hidden whitespace-nowrap  px-20  text-1xl text-white font-bold">
+              <a target="_blank" href="            https://github.com/YoussefHassanDEV/Graduation-Project
+              ">
+                Graduation-Project
+              </a>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact" class="w-full h-screen bg-gray-800 text-black">
+
+      <div class="container mx-auto p-6">
+
+        <div class="text-center">
+          <h2 class="text-2xl font-bold mb-4 text-white">Contact Us</h2>
+          <p class="mb-8 text-white">Swing by for a cup of coffee, or leave us a message:</p>
+        </div>
+        <div class="flex flex-wrap -mx-4">
+          <div class="w-full md:w-1/2 px-4 mb-8 md:mb-0">
+            <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.."
+              class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+              style="height:170px"></textarea>
+          </div>
+          <div class="w-full md:w-1/2 px-4">
+            <form action="/action_page.php" class="space-y-4">
+              <div>
+                <label for="fname" class="block text-sm font-medium text-gray-700">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name.."
+                  class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+              </div>
+              <div>
+                <label for="lname" class="block text-sm font-medium text-gray-700">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name.."
+                  class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+              </div>
+              <div>
+                <label for="country" class="block text-sm font-medium text-gray-700">Country</label>
+                <select id="country" name="country"
+                  class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">Egypt</option>
+                  <option value="usa">Saudi Arabia</option>
+                  <option value="usa">UAE</option>
+                  <option value="usa">Italy</option>
+
+                </select>
+              </div>
+
+              <div>
+                <input type="submit" value="Submit"
+                  class="w-full py-2 px-4 bg-blue-500 text-black font-semibold rounded-md shadow-sm hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+    <div id="footer">
+
+      <div class="relative mt-16 ">
+        <svg class="absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 text-deep-purple-accent-400"
+          preserveAspectRatio="none" viewBox="0 0 1440 54">
+          <path fill="#374151"
+            d="M0 22L120 16.7C240 11 480 1.00001 720 0.700012C960 1.00001 1200 11 1320 16.7L1440 22V54H1320C1200 54 960 54 720 54C480 54 240 54 120 54H0V22Z">
+          </path>
+        </svg>
+        <div class="px-4 pt-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 bg-gray-700">
+          <div class="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
+            <div class="md:max-w-md lg:col-span-2">
+              <a href="/" aria-label="Go home" title="Company" class="inline-flex items-center">
+                <svg class="w-8 text-teal-accent-400" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2"
+                  stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
+                  <rect x="3" y="1" width="7" height="12"></rect>
+                  <rect x="3" y="17" width="7" height="6"></rect>
+                  <rect x="14" y="1" width="7" height="6"></rect>
+                  <rect x="14" y="11" width="7" height="12"></rect>
+                </svg>
+                <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">Contact Me at</span>
+              </a>
+
+            </div>
+            <div class="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
+              <div>
+                <p class="font-semibold tracking-wide text-teal-accent-400">
+                  Whatsapp or Call
+                </p>
+                <ul class="mt-2 space-y-2">
+                  <li>
+                    <a href="/"
+                      class="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400">+201121800989</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-semibold tracking-wide text-teal-accent-400">Linkedln</p>
+                <ul class="mt-2 space-y-2">
+                  <li>
+                    <a target="_blank" href="/" class="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"><a
+                        href="https://www.linkedin.com/in/youssef-hassan-60a85a248/">My Linkedln</a></a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-semibold tracking-wide text-teal-accent-400">github</p>
+                <ul class="mt-2 space-y-2">
+                  <li>
+                    <a target="_blank" href="/" class="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"><a
+                        href="https://github.com/YoussefHassanDEV">YoussefHassanDEV</a></a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col justify-between pt-5 pb-10 border-t border-deep-purple-accent-200 sm:flex-row">
+            <p class="text-sm text-gray-100">
+              © Copyright 2024 Metas Inc. All rights reserved.
+            </p>
+            <div class="flex items-center mt-4 space-x-4 sm:mt-0">
+              <a target="_blank" href="https://github.com/YoussefHassanDEV"
+                class="transition-colors duration-300 text-deep-purple-100 hover:text-teal-accent-400">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12c0 4.418 2.868 8.167 6.839 9.489.5.091.682-.217.682-.483 0-.237-.008-.868-.013-1.704-2.782.605-3.369-1.342-3.369-1.342-.454-1.153-1.11-1.46-1.11-1.46-.908-.62.069-.607.069-.607 1.003.07 1.532 1.031 1.532 1.031.892 1.529 2.341 1.088 2.91.832.091-.647.349-1.088.635-1.339-2.22-.253-4.555-1.111-4.555-4.943 0-1.091.39-1.985 1.029-2.682-.103-.254-.447-1.274.098-2.656 0 0 .84-.269 2.75 1.026A9.564 9.564 0 0 1 12 6.8c.852.004 1.71.115 2.51.337 1.91-1.295 2.75-1.026 2.75-1.026.546 1.382.202 2.402.099 2.656.64.697 1.028 1.591 1.028 2.682 0 3.842-2.337 4.687-4.566 4.937.359.309.678.921.678 1.855 0 1.338-.012 2.419-.012 2.748 0 .268.18.579.688.481C19.136 20.163 22 16.418 22 12c0-5.52-4.48-10-10-10z">
+                  </path>
+                </svg>
+
+              </a>
+              <a target="_blank" href="https://www.linkedin.com/in/youssef-hassan-60a85a248/"
+                class="transition-colors duration-300 text-deep-purple-100 hover:text-teal-accent-400">
+                <svg viewBox="0 0 30 30" fill="currentColor" class="h-6">
+                  <path
+                    d="M27,3H3C1.344,3,0,4.344,0,6v18c0,1.656,1.344,3,3,3h24c1.656,0,3-1.344,3-3V6C30,4.344,28.656,3,27,3z M9,24H5V11h4V24z M7,9.5C5.62,9.5,4.5,8.38,4.5,7S5.62,4.5,7,4.5S9.5,5.62,9.5,7S8.38,9.5,7,9.5z M25,24h-4v-6.5c0-1.792-0.02-4.1-2.5-4.1 s-2.5,2-2.5,4V24h-4V11h3.84v1.787h0.055c0.536-1.015,1.84-2.087,3.791-2.087c4.053,0,4.8,2.666,4.8,6.134V24z">
+                  </path>
+                </svg>
+              </a>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+    </div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
